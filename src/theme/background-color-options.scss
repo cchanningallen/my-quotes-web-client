@@ -1,0 +1,45 @@
+@mixin background-color-options($module) {
+  //- Blues
+
+  .#{$module}--blue-saturated-darker { background-color: $blue-saturated-darker; }
+  .#{$module}--blue-saturated-dark { background-color: $blue-saturated-dark; }
+  .#{$module}--blue-saturated { background-color: $blue-saturated; }
+  .#{$module}--blue-saturated-light { background-color: $blue-saturated-light; }
+  .#{$module}--blue-saturated-lighter { background-color: $blue-saturated-lighter; }
+
+  .#{$module}--blue { background-color: $blue; }
+  .#{$module}--blue-light { background-color: $blue-light; }
+  .#{$module}--blue-lighter { background-color: $blue-lighter; }
+
+  //- Monochromatic
+
+  .#{$module}--gray-darker { background-color: $gray-darker; }
+  .#{$module}--gray-dark { background-color: $gray-dark; }
+  .#{$module}--gray { background-color: $gray; }
+  .#{$module}--gray-light { background-color: $gray-light; }
+  .#{$module}--gray-lighter { background-color: $gray-lighter; }
+
+  //- Pinks
+
+  .#{$module}--pink { background-color: $pink; }
+  .#{$module}--pink-light { background-color: $pink-light; }
+  .#{$module}--pink-lighter { background-color: $pink-lighter; }
+
+  //- Greens
+
+  .#{$module}--green { background-color: $green; }
+  .#{$module}--green-light { background-color: $green-light; }
+  .#{$module}--green-lighter { background-color: $green-lighter; }
+
+  //- Reds
+
+  .#{$module}--red { background-color: $red; }
+  .#{$module}--red-light { background-color: $red-light; }
+  .#{$module}--red-lighter { background-color: $red-lighter; }
+
+  //- Orange
+
+  .#{$module}--orange { background-color: $orange; }
+  .#{$module}--orange-light { background-color: $orange-light; }
+  .#{$module}--orange-lighter { background-color: $orange-lighter; }
+}

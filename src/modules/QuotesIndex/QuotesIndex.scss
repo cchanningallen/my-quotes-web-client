@@ -1,0 +1,33 @@
+@import 'constants';
+
+$module: 'QuotesIndex';
+$width: 40rem;
+
+.#{$module} {
+  margin: 0 auto;
+  width: $width;
+
+  &__row {
+    display: flex;
+    height: 2rem;
+  }
+
+  &__content {
+    width: $width * 0.6;
+  }
+
+  &__author {
+    width: $width * 0.3;
+  }
+
+  &__content, &__author {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__actions {
+    width: $width * 0.1;
+    text-align: right;
+  }
+}

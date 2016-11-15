@@ -1,0 +1,50 @@
+@import 'constants';
+
+$module: 'Home';
+
+.#{$module} {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__quote {
+    font-size: 2rem;
+    margin-top: 10rem;
+    position: relative;
+
+
+    &:hover {
+      cursor: pointer;
+
+      .#{$module}__quote-actions {
+        opacity: 1;
+      }
+    }
+
+    &-actions {
+      transition: 0.5s;
+      position: absolute;
+      top: -0.5rem;
+      right: -2rem;
+      font-size: 1rem;
+      opacity: 0;
+      padding: 0.5rem;
+
+      &--remove {
+        color: $pink-light;
+        &:hover { color: $red; }
+      }
+
+      &--add {
+        color: $pink-light;
+        &:hover { color: $red; }
+      }
+    }
+  }
+
+  &__author {
+    margin-left: 20rem;
+    color: $gray-lighter;
+  }
+}
